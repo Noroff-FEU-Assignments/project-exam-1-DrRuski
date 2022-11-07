@@ -1,5 +1,28 @@
-#menu-search{
+.navContainer-wrapper {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-menu-wrapper,
+.input-userProfile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+#menu-search {
+    background-color: #000;
     text-align: center;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #eee;
+}
+
+#menu-search::placeholder {
+    color: #eee;
+}
+
+.signIn:hover, .createAccountBtn:hover {
+    text-decoration: underline;
 }

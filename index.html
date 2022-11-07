@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e338dcafec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/globalStyles.css">
     <link rel="stylesheet" href="css/index.css">
     <title></title>
@@ -14,21 +18,28 @@
 
     <header>
         <nav>
-            <div class="logo">
-                <img src="/assets/images/logo.jpg" alt="Website Logo">
-            </div>
-            <div class="main-menu">
-                <a href="#">HOME</a>
-                <a href="#">BLOGS</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
-            </div>
-            <div class="search-input">
-                <input type="search" name="Search" id="menu-search" placeholder="Search">
-            </div>
-            <div class="userProfile">
-                <a href="#">Sign In</a>
-                <a href="#">Create Account</a>
+            <div class="navContainer-wrapper">
+                <div class="logo-menu-wrapper">
+                    <div class="logo">
+                        <a href="#"><img src="/assets/images/logo.svg" alt="Website Logo"></a>
+                    </div>
+                    <div class="menuAnchors">
+                        <a id="currentActive" href="index.html">HOME</a>
+                        <a href="blogList.html">BLOGS</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+
+                <div class="input-userProfile-wrapper">
+                    <div>
+                        <input type="search" name="Search" id="menu-search" placeholder="Search">
+                    </div>
+                    <div class="userProfile">
+                        <a class="signIn" href="#">Sign In</a>
+                        <a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -49,4 +60,5 @@
 </body>
 
 <script src="js/index.js" type="module"></script>
+
 </html>
