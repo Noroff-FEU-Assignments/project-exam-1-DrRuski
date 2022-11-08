@@ -52,6 +52,12 @@ p {
     flex-direction: column;
 }
 
+/* Size */
+
+.main-width{
+    max-width: 1440px;
+}
+
 
 /* Color */
 
