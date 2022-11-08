@@ -1,0 +1,10 @@
+.contactContainer h1 {
+    margin: auto;
+}
+
+#faqSearch {
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #000;
+}
