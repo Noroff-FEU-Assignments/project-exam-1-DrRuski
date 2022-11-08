@@ -24,4 +24,4 @@ async function getBlogPosts() {
   }
 }
 
-getBlogPosts();
+// getBlogPosts();

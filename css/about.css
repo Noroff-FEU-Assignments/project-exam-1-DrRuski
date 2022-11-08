@@ -1,0 +1,27 @@
+.about-wrapper {
+    gap: 2rem;
+}
+.about-text-wrapper{
+    gap: 1.5rem;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+.about-text-wrapper h4{
+    line-height: 2rem;
+}
+
+.contactBtn {
+    margin: auto;
+}
+.contactBtn a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--main-accent-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contactBtn a:hover{
+    text-decoration: underline;
+}
