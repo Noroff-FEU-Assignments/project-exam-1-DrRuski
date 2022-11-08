@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
-}
 
 *,
 *::after,
@@ -11,10 +6,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5.5rem;
+    height: 100vh;
     font-family: "Inter", sans-serif;
     margin: 0;
 }
-
 
 .searchGlass {
     color: #eee;
@@ -40,7 +39,6 @@ body {
 
     .userProfile,
     .menuAnchors {
-        display: flex;
         gap: 1rem;
     }
 
@@ -60,26 +58,25 @@ body {
     .navContainer-wrapper {
         max-width: 1440px;
         margin: auto;
-        display: flex;
         justify-content: space-between;
     }
 
     .logo-menu-wrapper,
     .input-userProfile-wrapper {
-        display: flex;
         align-items: center;
         gap: 5.5rem;
     }
 
     #menu-search {
+        color: var(--main-text-color);
         background-color: #000;
         text-align: center;
         border: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--main-text-color);
     }
 
     #menu-search::placeholder {
-        color: #eee;
+        color: var(--main-text-color);
     }
 
     .signIn:hover,
@@ -87,4 +84,67 @@ body {
         text-decoration: underline;
     }
 
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        background-color: var(--main-bg-color);
+    }
+
+    .footer-wrapper {
+        margin: auto;
+        max-width: 1440px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 75px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+
+    .footer-SoMe {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 162px;
+    }
+
+    .newsletter-form-container {
+        color: var(--main-text-color);
+        max-width: 260px;
+        gap: 15px;
+    }
+    
+    .newsletter-input {
+        gap: 5px;
+    }
+    .newsletter-input input{
+        color: var(--main-text-color);
+        background-color: #000;
+        border: none;
+        border-bottom: 1px solid var(--main-text-color);
+    }
+    .newsletter-input button {
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        max-width: 100px;
+        padding: 0.4rem;
+        border: none;
+        border-radius: 5px;
+        color: var(--main-text-color);
+        background-color: var(--main-accent-color);
+    }
+    #emailNewsletter::placeholder {color: var(--main-text-color);}
+
+    .ToS{
+        color: var(--main-accent-color);
+        text-decoration: underline;
+    }
 }

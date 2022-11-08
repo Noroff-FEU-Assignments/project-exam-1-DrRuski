@@ -1,0 +1,71 @@
+/* Font */
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.subtext {
+    font-size: 12px;
+}
+
+
+/* Flex */
+
+.flex-horiz {
+    display: flex;
+}
+
+.flex-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Color */
+
+:root {
+    --main-bg-color: #000;
+    --main-text-color: #eee;
+    --main-accent-color: #3E54A3;
+
+    --first-tag-color: #7858A6;
+    --second-tag-color: #4FA095;
+    --third-tag-color: #4C0033;
+    --fourth-tag-color: #A27B5C;
+
+    --success-color: #28A745;
+    --warning-color: #ffc107;
+    --danger-color: #DC3545;
+}

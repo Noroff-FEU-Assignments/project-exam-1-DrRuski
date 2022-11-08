@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/globalStyles.css">
     <link rel="stylesheet" href="css/individualBlog.css">
     <title></title>
@@ -14,7 +15,29 @@
 
     <header>
         <nav>
+            <div class="navContainer-wrapper flex-horiz">
+                <div class="logo-menu-wrapper flex-horiz">
+                    <div class="logo">
+                        <a href="#"><img src="/assets/images/logo.svg" alt="Website Logo"></a>
+                    </div>
+                    <div class="menuAnchors flex-horiz">
+                        <a id="currentActive" href="index.html">HOME</a>
+                        <a href="blogList.html">BLOGS</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
 
+                <div class="input-userProfile-wrapper flex-horiz">
+                    <div>
+                        <input type="search" name="Search" id="menu-search" placeholder="Search">
+                    </div>
+                    <div class="userProfile flex-horiz">
+                        <a class="signIn" href="#">Sign In</a>
+                        <a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -28,6 +51,38 @@
         </section>
     </main>
 
+    <footer>
+        <div class="footer-wrapper flex-horiz">
+            <div class="footer-links flex-vert">
+                <a href="#">Sitemap</a>
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            
+            <div class="newsletter-form-container flex-vert">
+                <div class="newsletter-title">
+                    <h4>Subscribe for Newsletter</h4>
+                    <p class="subtext">Get news, reviews and the latest of all digital entertainment directly to your inbox.</p>
+                </div>
+                <div class="newsletter-input flex-vert">
+                    <label for="emailNewsletter">Email</label>
+                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com">
+                    <button>SUBSCRIBE</button>
+                </div>
+                <p class="subtext">By subscribing you agree to our <a class="ToS" href="#">Terms of Use</a> and <a class="ToS" href="#">Privacy Policy</a>.</p>
+            </div>
+            <div class="footer-SoMe flex-horiz">
+                <a href="#"><img src="assets/images/Twitter.svg" alt=""></a>
+                <a href="#"><img src="assets/images/Facebook.svg" alt=""></a>
+                <a href="#"><img src="assets/images/Discord.svg" alt=""></a>
+                <a href="#"><img src="assets/images/Instagram.svg" alt=""></a>
+                <a href="#"><img src="assets/images/Youtube.svg" alt=""></a>
+            </div>
+        </div>
+        <p class="subtext" style="color: var(--main-text-color); text-align: center; padding: 15px 0px 5px 0px;">© 2022 Ilya Martchenko</p>
+    </footer>
 </body>
 
 </html>
