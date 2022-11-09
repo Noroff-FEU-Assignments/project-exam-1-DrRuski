@@ -1,5 +1,7 @@
-.contactContainer h1 {
-    margin: auto;
+.contactContainer {
+padding: 2rem;
+   align-items: center;
+   gap: 50px;
 }
 
 #faqSearch {
@@ -7,4 +9,57 @@
     text-align: center;
     border: none;
     border-bottom: 1px solid #000;
+}
+
+.faqMainContainer {
+    margin: auto;
+    align-items: center;
+    max-width: 1000px;
+    gap: 25px;
+}
+
+.faqSubContainer {
+    gap: 25px;
+}
+.faqSubContainer hr {
+    opacity: 0.1;
+}
+
+.questionContainerOne, .questionContainerTwo, .questionContainerThree, .questionContainerFour {
+    justify-content: space-between;
+    align-items: center;
+}
+.questionOne, .questionTwo, .questionThree, .questionFour {
+    gap: 15px;
+}
+.questionOne p, .questionTwo p, .questionThree p, .questionFour p {
+    margin-right: 50px;
+}
+.questionTwo p, .questionThree p, .questionFour p {
+    display: none;
+}
+
+.questionContainerTwo, .questionContainerThree, .questionContainerFour {
+    opacity: 0.4;
+}
+
+.faqDropDownBtn{
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+}
+
+
+
+
+
+.contactFormContainer {
+    gap: 50px;
+}
+
+.personalInfo {
+    max-width: 315px;
+    gap: 25px;
 }
