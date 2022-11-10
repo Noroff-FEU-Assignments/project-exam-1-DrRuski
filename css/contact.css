@@ -1,7 +1,6 @@
 .contactContainer {
-padding: 2rem;
-   align-items: center;
-   gap: 50px;
+    align-items: center;
+    gap: 50px;
 }
 
 #faqSearch {
@@ -21,29 +20,52 @@ padding: 2rem;
 .faqSubContainer {
     gap: 25px;
 }
+
 .faqSubContainer hr {
     opacity: 0.1;
 }
 
-.questionContainerOne, .questionContainerTwo, .questionContainerThree, .questionContainerFour {
+.questionContainerOne,
+.questionContainerTwo,
+.questionContainerThree,
+.questionContainerFour {
     justify-content: space-between;
     align-items: center;
 }
-.questionOne, .questionTwo, .questionThree, .questionFour {
+
+.questionOne,
+.questionTwo,
+.questionThree,
+.questionFour {
     gap: 15px;
 }
-.questionOne p, .questionTwo p, .questionThree p, .questionFour p {
+
+.questionOne p,
+.questionTwo p,
+.questionThree p,
+.questionFour p {
     margin-right: 50px;
 }
-.questionTwo p, .questionThree p, .questionFour p {
-    display: none;
-}
 
-.questionContainerTwo, .questionContainerThree, .questionContainerFour {
+
+
+
+/* Remember to make this dynamic in JS later. */
+.questionContainerTwo,
+.questionContainerThree,
+.questionContainerFour {
     opacity: 0.4;
 }
 
-.faqDropDownBtn{
+.questionTwo p,
+.questionThree p,
+.questionFour p {
+    display: none;
+}
+
+
+
+.faqDropDownBtn {
     cursor: pointer;
     padding: 0.5rem;
     font-size: 24px;
@@ -52,14 +74,73 @@ padding: 2rem;
 }
 
 
-
-
-
-.contactFormContainer {
-    gap: 50px;
-}
-
-.personalInfo {
-    max-width: 315px;
+.contactMainContainer {
     gap: 25px;
 }
+
+.contactMainContainer h2 {
+    margin: auto;
+}
+
+.contactFormContainer {
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.personalInfoContainer {
+    width: 250px;
+    gap: 25px;
+}
+
+.first-name,
+.last-name,
+.email-address,
+.textAreaContainer {
+    gap: 5px;
+}
+
+#firstName,
+#lastName,
+#email {
+    color: var(--main-bg-color);
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
+#problemDetails {
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+#problemDetails::placeholder,
+#firstName::placeholder,
+#lastName::placeholder,
+#email::placeholder {
+    font-family: "Inter", sans-serif;
+}
+
+.formSubmitBtn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-accent-color);
+    color: var(--main-text-color);
+    padding: 0.5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* if (time left){
+
+/* .fileUploaded {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 5px;
+}
+.hidden {display: none;}
+
+}*/

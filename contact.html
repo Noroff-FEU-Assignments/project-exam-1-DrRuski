@@ -33,9 +33,6 @@
                 </div>
 
                 <div class="input-userProfile-wrapper flex-horiz">
-                    <div>
-                        <input type="search" name="Search" id="menu-search" placeholder="Search">
-                    </div>
                     <div class="userProfile flex-horiz">
                         <a class="signIn" href="#">Sign In</a>
                         <a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
@@ -116,30 +113,52 @@
                 </div>
             </div>
 
+
+
+
+
             <div class="contactMainContainer flex-vert">
                 <h2>Still have questions? Send us an email.</h2>
 
                 <div class="contactFormContainer flex-horiz">
 
-                    <div class="personalInfo flex-vert">
+                    <div class="personalInfoContainer flex-vert">
                         <div class="first-name flex-vert">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="First Name" id="firstName">
+                            <input type="text" name="First Name" id="firstName" placeholder="John">
                         </div>
                         <div class="last-name flex-vert">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="Last Name" id="lastName">
+                            <input type="text" name="Last Name" id="lastName" placeholder="Doe">
                         </div>
                         <div class="email-address flex-vert">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com">
                         </div>
                     </div>
 
-                    <div class="textArea flex-vert">
+                    <div class="textAreaContainer flex-vert">
                         <label for="problemDetails">What seems to be the problem?</label>
-                        <textarea name="Problem Details" id="problemDetails" cols="30" rows="10"></textarea>
+                        <!-- <label for="upload" class="uploadContainer">
+                            <div class="fileUploaded flex-horiz">
+                            <span>image.png</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                            </div>
+                            <div class="uploadBtn flex-horiz">
+                                <span>Add attachment</span>
+                                
+                                </div>
+                        </label>
+                        <input class="hidden" type="file" accept="png" id="upload"> -->
+                        <textarea name="Problem Details" id="problemDetails" cols="50" rows="10" placeholder="Write your problem here..."></textarea>
                     </div>
+                </div>
+
+                <div class="formSubmitBtnContainer">
+                    <button class="formSubmitBtn">SUBMIT</button>
                 </div>
             </div>
 
