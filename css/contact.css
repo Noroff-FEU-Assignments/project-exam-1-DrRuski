@@ -122,6 +122,7 @@
 }
 
 .formSubmitBtn {
+    font-family: "Inter", sans-serif;
     cursor: pointer;
     border: none;
     border-radius: 5px;
