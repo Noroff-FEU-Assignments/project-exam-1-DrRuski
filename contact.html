@@ -61,7 +61,7 @@
 
                     <div class="questionContainerOne flex-horiz">
                         <div class="questionOne flex-vert">
-                            <h3>Lorem ipsum dolor sit amet?</h3>
+                            <h3>What sort of benefits do I get by becoming a member?</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit vestibulum orci,
                                 id molestie ex iaculis in. Morbi venenatis a nisi ac pharetra. Vestibulum consectetur
                                 lorem fermentum diam dictum, at posuere arcu dapibus.</p>
@@ -74,7 +74,7 @@
 
                     <div class="questionContainerTwo flex-horiz">
                         <div class="questionTwo flex-vert">
-                            <h3>Lorem ipsum dolor sit amet?</h3>
+                            <h3>Does it cost to become a Bongo Bloggers member?</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit vestibulum orci,
                                 id molestie ex iaculis in. Morbi venenatis a nisi ac pharetra. Vestibulum consectetur
                                 lorem fermentum diam dictum, at posuere arcu dapibus.</p>
@@ -87,7 +87,7 @@
 
                     <div class="questionContainerThree flex-horiz">
                         <div class="questionThree flex-vert">
-                            <h3>Lorem ipsum dolor sit amet?</h3>
+                            <h3>Will I receive monetary compensation for my blog posts?</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit vestibulum orci,
                                 id molestie ex iaculis in. Morbi venenatis a nisi ac pharetra. Vestibulum consectetur
                                 lorem fermentum diam dictum, at posuere arcu dapibus.</p>
@@ -100,7 +100,7 @@
 
                     <div class="questionContainerFour flex-horiz">
                         <div class="questionFour flex-vert">
-                            <h3>Lorem ipsum dolor sit amet?</h3>
+                            <h3>Can I write blogs about other stuff than entertainment?</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit vestibulum orci,
                                 id molestie ex iaculis in. Morbi venenatis a nisi ac pharetra. Vestibulum consectetur
                                 lorem fermentum diam dictum, at posuere arcu dapibus.</p>
@@ -117,7 +117,7 @@
 
 
 
-            <div class="contactMainContainer flex-vert">
+            <form class="contactMainContainer flex-vert">
                 <h2>Still have questions? Send us an email.</h2>
 
                 <div class="contactFormContainer flex-horiz">
@@ -126,14 +126,19 @@
                         <div class="first-name flex-vert">
                             <label for="firstName">First Name</label>
                             <input type="text" name="First Name" id="firstName" placeholder="John">
+                            <p class="formErrorDisplay" id="firstNameError">This field is required.</p>
                         </div>
+
                         <div class="last-name flex-vert">
                             <label for="lastName">Last Name</label>
                             <input type="text" name="Last Name" id="lastName" placeholder="Doe">
+                            <p class="formErrorDisplay" id="lastNameError">This field is required.</p>
                         </div>
+
                         <div class="email-address flex-vert">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com">
+                            <p class="formErrorDisplay" id="emailError">This field is required.</p>
                         </div>
                     </div>
 
@@ -155,13 +160,14 @@
                         <input class="hidden" type="file" accept="png" id="upload"> -->
                         <textarea name="Problem Details" id="problemDetails" cols="50" rows="10"
                             placeholder="Write your problem here..."></textarea>
+                        <p class="formErrorDisplay" id="problemDetailsError">This field is required.</p>
                     </div>
                 </div>
 
-                <div class="formSubmitBtnContainer">
-                    <button class="formSubmitBtn">SUBMIT</button>
-                </div>
-            </div>
+                    <input type="submit" value="SUBMIT" id="formSubmitBtn">
+                    
+                
+            </form>
 
         </section>
     </main>
@@ -170,8 +176,8 @@
         <div class="footer-wrapper flex-horiz">
             <div class="footer-links flex-vert">
                 <a href="#">Sitemap</a>
-                <a href="#">About</a>
-                <a href="#">Accessibility</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
                 <a href="#">Privacy</a>
                 <a href="#">Terms of Use</a>
             </div>
@@ -202,7 +208,7 @@
             Bongo Blogsters</p>
     </footer>
 
-    <script src="/js/contact.js" type="module"></script>
+    <script src="js/contact.js" type="module"></script>
 </body>
 
 </html>

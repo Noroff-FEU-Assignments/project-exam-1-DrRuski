@@ -121,7 +121,7 @@
     font-family: "Inter", sans-serif;
 }
 
-.formSubmitBtn {
+#formSubmitBtn {
     font-family: "Inter", sans-serif;
     cursor: pointer;
     border: none;
@@ -145,3 +145,11 @@
 .hidden {display: none;}
 
 }*/
+
+
+/* Form */
+
+.formErrorDisplay {
+    display: none;
+    color: #DC3545;
+}
