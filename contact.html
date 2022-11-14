@@ -117,28 +117,26 @@
 
 
 
-            <form class="contactMainContainer flex-vert">
+            <form method="GET" class="contactMainContainer flex-vert">
                 <h2>Still have questions? Send us an email.</h2>
 
                 <div class="contactFormContainer flex-horiz">
-
                     <div class="personalInfoContainer flex-vert">
                         <div class="first-name flex-vert">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="First Name" id="firstName" placeholder="John">
-                            <p class="formErrorDisplay" id="firstNameError">This field is required.</p>
+                            <input type="text" name="firstName" id="firstName" placeholder="John" required
+                                minlength="2">
                         </div>
 
                         <div class="last-name flex-vert">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="Last Name" id="lastName" placeholder="Doe">
-                            <p class="formErrorDisplay" id="lastNameError">This field is required.</p>
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe" required minlength="2">
                         </div>
 
                         <div class="email-address flex-vert">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com">
-                            <p class="formErrorDisplay" id="emailError">This field is required.</p>
+                            <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com" required
+                                minlength="2" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                         </div>
                     </div>
 
@@ -158,15 +156,16 @@
                                 </div>
                         </label>
                         <input class="hidden" type="file" accept="png" id="upload"> -->
-                        <textarea name="Problem Details" id="problemDetails" cols="50" rows="10"
-                            placeholder="Write your problem here..."></textarea>
-                        <p class="formErrorDisplay" id="problemDetailsError">This field is required.</p>
+                        <textarea name="problemDescription" id="problemDetails" cols="50" rows="10"
+                            placeholder="Write your problem here..." required minlength="2"></textarea>
                     </div>
                 </div>
 
-                    <input type="submit" value="SUBMIT" id="formSubmitBtn">
-                    
-                
+                <div>
+                    <button class="formSubmitBtn">SUBMIT</button>
+                </div>
+
+
             </form>
 
         </section>
