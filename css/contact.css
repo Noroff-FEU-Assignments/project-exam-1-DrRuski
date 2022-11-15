@@ -97,15 +97,15 @@
     gap: 25px;
 }
 
-.first-name,
-.last-name,
+.full-name,
+.subject,
 .email-address,
 .textAreaContainer {
     gap: 5px;
 }
 
-#firstName,
-#lastName,
+#fullName,
+#subject,
 #email {
     color: var(--main-bg-color);
     background-color: #fff;
@@ -119,8 +119,8 @@
 }
 
 #problemDetails::placeholder,
-#firstName::placeholder,
-#lastName::placeholder,
+#fullName::placeholder,
+#subject::placeholder,
 #email::placeholder {
     font-family: "Inter", sans-serif;
 }

@@ -43,9 +43,6 @@
     </header>
 
 
-
-
-
     <main>
         <section class="contactContainer flex-vert main-width">
 
@@ -114,29 +111,26 @@
             </div>
 
 
-
-
-
             <form method="GET" class="contactMainContainer flex-vert">
                 <h2>Still have questions? Send us an email.</h2>
 
                 <div class="contactFormContainer flex-horiz">
                     <div class="personalInfoContainer flex-vert">
-                        <div class="first-name flex-vert">
-                            <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="John" required
-                                minlength="2">
-                        </div>
-
-                        <div class="last-name flex-vert">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Doe" required minlength="2">
+                        <div class="full-name flex-vert">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="John Doe" required
+                                minlength="5">
                         </div>
 
                         <div class="email-address flex-vert">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com" required
-                                minlength="2" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        </div>
+
+                        <div class="subject flex-vert">
+                            <label for="subject">Question Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Account / Blog Metrics / Bug" required minlength="15">
                         </div>
                     </div>
 
@@ -170,6 +164,7 @@
 
         </section>
     </main>
+
 
     <footer>
         <div class="footer-wrapper flex-horiz">
