@@ -12,28 +12,40 @@ async function getBlogPosts() {
     const blogPosts = await response.json();
 
     
-    // console.log(blogPosts)
+    
 
+    console.log(blogPosts)
 
-    for (let index = 0; index < blogPosts.length; index++) {
-      const blogPost = blogPosts[index];
-      
+      const category = blogPosts.map(function (catg){
+        return `<p>${catg._embedded["wp:term"][0][0].name}</p>`;
+      }).join(" ");
 
-      
-      const category = blogPost._link;
-      
+      console.log(category)
 
-      console.log(blogPost)
-
-      
-      
       indexTopSection.innerHTML += `<div>
-                                      <p>${category}</p>
-                                      <img src="${blogPost.jetpack_featured_media_url}">
-                                      <p></p>
-                                      <h1>${blogPost.title.rendered}</h1>
+                                      ${category}
+                                      
                                     </div>`
-    }
+
+    // for (let index = 0; index < blogPosts.length; index++) {
+    //   const blogPost = blogPosts[index];
+      
+
+      
+
+      
+
+     
+
+      
+      
+      // indexTopSection.innerHTML += `<div>
+                                      
+      //                                 <img src="${blogPost.jetpack_featured_media_url}">
+      //                                 <p></p>
+      //                                 <h1>${blogPost.title.rendered}</h1>
+      //                               </div>`
+    // }
   } catch (error) {
     console.log(error);
   }
