@@ -17,18 +17,23 @@ async function getBlogPosts() {
     blogPosts.map((post) => {
       const imgUrl = `${post._embedded["wp:featuredmedia"][0].source_url}`;
       const postTitle = `${post.title.rendered}`;
-      const category = `${post._embedded["wp:term"][0][0].name}`;
+      const category = `${post._embedded["wp:term"][0]
+        .map((catg) => `${catg.name}`)
+        .join(" ")}`;
       const excerpt = `${post.excerpt.rendered}`;
       const postTags = `${post._embedded["wp:term"][1]
         .map((tag) => `${tag.name}`)
         .join(" ")}`;
+      const author = `${post._embedded.author.map(
+        (authorName) => authorName.name
+      )}`;
 
       indexTopSection.innerHTML += `<div>
                                 <img class="postImage"postImage src="${imgUrl}">
                                 <p>${postTags}</p>
                                 <h4>${postTitle}</h4>
                                 <p>${excerpt}</p>
-                                <a class="subtext">#${category}</a>
+                                <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
                               </div>`;
     });
   } catch (error) {
