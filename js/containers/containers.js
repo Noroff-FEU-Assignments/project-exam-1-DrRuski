@@ -2,6 +2,7 @@
 export const indexTopSection = document.querySelector(".topSection");
 export const indexMidSection = document.querySelector(".midSection");
 export const indexBottomSection = document.querySelector(".bottomSection");
+export const test = document.querySelector(".test")
 
 
 // Contact - Form

@@ -1,0 +1,8 @@
+.topSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.postImage {
+    max-width: 300px;
+}
