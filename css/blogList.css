@@ -1,0 +1,6 @@
+.blogListContainer{
+    flex-wrap: wrap;
+}
+.blogPost{
+    max-width: 300px;
+}

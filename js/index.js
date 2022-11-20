@@ -8,7 +8,6 @@ import {
 } from "./containers/containers.js";
 
 const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=100";
-let count = 0;
 
 async function getBlogPosts() {
   try {
