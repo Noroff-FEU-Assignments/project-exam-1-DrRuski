@@ -63,11 +63,7 @@ async function getBlogPosts() {
                                 <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
                               </div>`;
       }
-
-    
     });
-
-    
   } catch (error) {
     console.log(error);
   }
@@ -75,14 +71,12 @@ async function getBlogPosts() {
 
 getBlogPosts();
 
+prevButton.addEventListener("click", () => {
+  const slideWidth = test.clientWidth;
+  carouselContainer.scrollLeft -= slideWidth;
+});
 
-  prevButton.addEventListener("click", () => {
-    const slideWidth = test.clientWidth;
-    carouselContainer.scrollLeft -= slideWidth;
-  });
-  
-  nextButton.addEventListener("click", () => {
-    const slideWidth = test.clientWidth;
-    carouselContainer.scrollLeft += slideWidth;
-  })
-
+nextButton.addEventListener("click", () => {
+  const slideWidth = test.clientWidth;
+  carouselContainer.scrollLeft += slideWidth;
+});
