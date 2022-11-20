@@ -1,9 +1,12 @@
 // Index - Home
-export const indexTopSection = document.querySelector(".topSection");
 export const indexMidSection = document.querySelector(".midSection");
 export const indexBottomSection = document.querySelector(".bottomSection");
-export const test = document.querySelector(".test")
 
+// Carousel
+export const carouselContainer = document.querySelector(".carouselContainer");
+export const test = document.querySelector(".carouselContainer > li");
+export const prevButton = document.getElementById("carouselArrowLeft")
+export const nextButton = document.getElementById("carouselArrowRight")
 
 // Contact - Form
 export const contactForm = document.querySelector(".contactMainContainer");
