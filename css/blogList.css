@@ -7,6 +7,7 @@
     gap: 10px;
     max-width: 335px;
 }
+
 .blogPostWrapper a {
     color: var(--main-bg-color);
     text-decoration: none;
