@@ -21,6 +21,10 @@
     height: 100%;
     flex: 1 0 100%;
 }
+.latestPost a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
 
 .carouselArrow {
     position: absolute;
@@ -69,6 +73,8 @@
 }
 
 .popularPost {
+    color: var(--main-bg-color);
+    text-decoration: none;
     gap: 0.4rem;
 }
 
@@ -102,3 +108,9 @@
     gap: 0.4rem;
     max-width: 335px;
 }
+
+.bottomPosts a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+

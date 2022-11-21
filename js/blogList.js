@@ -30,13 +30,17 @@ async function getBlogPosts() {
       ) {
         blogListContainer.innerHTML += `
                                 <div class="blogPostWrapper flex-vert">
-                                    <img class="postImage" src="${imgUrl}">
-                                    <p class="${postTags} blogPostTags">${postTags}</p>
-                                    <h4>${postTitle}</h4>
-                                  <div class="flex-horiz">
-                                    <p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p>
-                                  </div>
-                              </div>`;
+                                  <a href="#"
+                                    <div>
+                                        <img class="postImage" src="${imgUrl}">
+                                        <p class="${postTags} blogPostTags">${postTags}</p>
+                                        <h4>${postTitle}</h4>
+                                      <div class="flex-horiz">
+                                        <p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>`;
       }
     });
   } catch (error) {

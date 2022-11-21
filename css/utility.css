@@ -40,6 +40,11 @@ p {
     font-weight: 400;
 }
 
+.tagText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .subtext {
     font-size: 12px;
 }

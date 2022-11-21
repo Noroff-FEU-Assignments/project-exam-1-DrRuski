@@ -30,22 +30,32 @@ async function getBlogPosts() {
       )}`;
 
       if (postTags.toLowerCase().startsWith("latest")) {
-        carouselContainer.innerHTML += `<li class="latestPost flex-vert">
-                                <img class="postImageSlider" src="${imgUrl}">
-                                <div class="flex-horiz"><span class="${postTags} blogPostTags">${postTags}</span></div>
-                                <h4>${postTitle}</h4>
-                                <p>${excerpt}</p>
-                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+        carouselContainer.innerHTML += `
+                              <li class="latestPost">
+                                <a href="#"
+                                  <div>
+                                    <img class="postImageSlider" src="${imgUrl}">
+                                    <div class="flex-horiz"><span class="${postTags} blogPostTags">${postTags}</span></div>
+                                    <h4>${postTitle}</h4>
+                                    <p>${excerpt}</p>
+                                    <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+                                  </div>
+                                </a>
                               </li>`;
       }
 
       if (postTags.toLowerCase().startsWith("popular")) {
-        indexMidSection.innerHTML += `<div class="popularPost flex-vert">
-                                <img class="postImagePopular" src="${imgUrl}">
-                                <p class="${postTags} blogPostTags">${postTags}</p>
-                                <h4>${postTitle}</h4>
-                                <span class="lengthTest">${excerpt}</span>
-                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+        indexMidSection.innerHTML += `
+                              <div>
+                                <a href="#"
+                                  <div class="popularPost">
+                                    <img class="postImagePopular" src="${imgUrl}">
+                                    <p class="${postTags} blogPostTags">${postTags}</p>
+                                    <h4>${postTitle}</h4>
+                                    <span class="lengthTest">${excerpt}</span>
+                                    <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+                                  <div>
+                                </a>
                               </div>`;
       }
 
@@ -53,11 +63,16 @@ async function getBlogPosts() {
         !postTags.toLowerCase().startsWith("popular") &&
         !postTags.toLowerCase().startsWith("latest")
       ) {
-        indexBottomSection.innerHTML += `<div class="bottomPosts flex-vert">
-                                <img class="bottomPostImage" src="${imgUrl}">
-                                <p class="${postTags} blogPostTags">${postTags}</p>
-                                <h4>${postTitle}</h4>
-                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+        indexBottomSection.innerHTML += `
+                              <div class="bottomPosts">
+                                <a href="#"
+                                  <div>
+                                    <img class="bottomPostImage" src="${imgUrl}">
+                                    <p class="${postTags} blogPostTags">${postTags}</p>
+                                    <h4>${postTitle}</h4>
+                                    <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
+                                  </div>
+                                </a>
                               </div>`;
       }
     });
