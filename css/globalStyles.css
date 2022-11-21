@@ -192,10 +192,11 @@ img {
         background-color: var(--first-tag-color);
     }
 
-    .Tech,
-    .Gaming,
-    .Movies,
-    .Tv-Series {
+    #Tech,
+    #Gaming,
+    #Movies,
+    #Tv-Series {
+        color: var(--main-accent-color);
         text-decoration: none;
         text-transform: uppercase
     }

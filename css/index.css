@@ -23,6 +23,7 @@
 }
 
 .latestPost a {
+    gap: 0.4rem;
     color: var(--main-bg-color);
     text-decoration: none;
 }
@@ -74,6 +75,10 @@
 }
 
 .popularPost {
+    gap: 0.4rem;
+}
+
+.popularPost a {
     color: var(--main-bg-color);
     text-decoration: none;
     gap: 0.4rem;
@@ -108,6 +113,10 @@
 .bottomPosts {
     gap: 0.4rem;
     max-width: 335px;
+}
+
+.bottomPosts a {
+    gap: 0.4rem;
 }
 
 .bottomPosts a {
