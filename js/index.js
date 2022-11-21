@@ -44,7 +44,7 @@ async function getBlogPosts() {
                                 <img class="postImagePopular" src="${imgUrl}">
                                 <p class="${postTags} blogPostTags">${postTags}</p>
                                 <h4>${postTitle}</h4>
-                                <p>${excerpt}</p>
+                                <span class="lengthTest">${excerpt}</span>
                                 <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
                               </div>`;
       }
@@ -71,14 +71,14 @@ async function getBlogPosts() {
 getBlogPosts();
 
 function setListeners() {
-  const test = document.querySelector(".latestPost");
+  const latestPost = document.querySelector(".latestPost");
   prevButton.addEventListener("click", () => {
-    const slideWidth = test.clientWidth;
+    const slideWidth = latestPost.clientWidth;
     carouselContainer.scrollLeft -= slideWidth;
   });
 
   nextButton.addEventListener("click", () => {
-    const slideWidth = test.clientWidth;
+    const slideWidth = latestPost.clientWidth;
     carouselContainer.scrollLeft += slideWidth;
   });
 }

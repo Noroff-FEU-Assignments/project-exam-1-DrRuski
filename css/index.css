@@ -1,3 +1,4 @@
+/* Top Section */
 .topSection {
     overflow: hidden;
     position: relative;
@@ -77,8 +78,15 @@
     max-height: 456px;
 }
 
-/* Bottom Section */
+.lengthTest p {
+    position: relative;
+    overflow: hidden;
+    height: 42px;
+}
 
+
+
+/* Bottom Section */
 .bottomSection {
     gap: 33px;
     flex-wrap: wrap;
