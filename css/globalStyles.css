@@ -195,7 +195,8 @@ img {
     #Tech,
     #Gaming,
     #Movies,
-    #Tv-Series {
+    #Tv-Series,
+    #Sport {
         color: var(--main-accent-color);
         text-decoration: none;
         text-transform: uppercase

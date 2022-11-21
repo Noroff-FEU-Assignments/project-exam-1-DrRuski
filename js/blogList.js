@@ -36,7 +36,7 @@ async function getBlogPosts() {
                                         <p class="${postTags} blogPostTags">${postTags}</p>
                                         <h4>${postTitle}</h4>
                                       <div class="flex-horiz">
-                                        <p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p>
+                                        <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
                                       </div>
                                     </div>
                                   </a>
