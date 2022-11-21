@@ -1,11 +1,10 @@
 .topSection {
-    margin: 1rem;
     overflow: hidden;
     position: relative;
 }
 
 .carouselContainer {
-    height: calc(100vh - 2rem);
+
     width: 100%;
     list-style: none;
     margin: 0;
@@ -16,6 +15,7 @@
 }
 
 .latestPost {
+    gap: 0.4rem;
     width: 100%;
     height: 100%;
     flex: 1 0 100%;
@@ -52,4 +52,45 @@
     right: 0;
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
+}
+
+.postImageSlider {
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+
+
+/* Middle Section */
+.midSection {
+    gap: 38px;
+}
+
+.popularPost {
+    gap: 0.4rem;
+}
+
+.postImagePopular {
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 456px;
+}
+
+/* Bottom Section */
+
+.bottomSection {
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.bottomPostImage {
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.bottomPosts {
+    gap: 0.4rem;
+    max-width: 335px;
 }

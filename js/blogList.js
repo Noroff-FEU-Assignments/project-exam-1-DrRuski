@@ -15,7 +15,6 @@ async function getBlogPosts() {
       const category = `${post._embedded["wp:term"][0]
         .map((catg) => `${catg.name}`)
         .join(" ")}`;
-      const excerpt = `${post.excerpt.rendered}`;
       const postTags = `${post._embedded["wp:term"][1]
         .map((tag) => `${tag.name}`)
         .join(" ")}`;
@@ -23,15 +22,22 @@ async function getBlogPosts() {
         (authorName) => authorName.name
       )}`;
 
-      
-      blogListContainer.innerHTML += `<div class="blogPost flex-vert">
-                                <img class="postImage"postImage src="${imgUrl}">
-                                <p>${postTags}</p>
-                                <h4>${postTitle}</h4>
-                                <p>${excerpt}</p>
-                                <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
+      console.log(postTags);
+
+      if (
+        !postTags.toLowerCase().startsWith("latest") &&
+        !postTags.toLowerCase().startsWith("popular")
+      ) {
+        blogListContainer.innerHTML += `
+                                <div class="blogPostWrapper flex-vert">
+                                    <img class="postImage" src="${imgUrl}">
+                                    <p class="${postTags} blogPostTags">${postTags}</p>
+                                    <h4>${postTitle}</h4>
+                                  <div class="flex-horiz">
+                                    <p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p>
+                                  </div>
                               </div>`;
-      
+      }
     });
   } catch (error) {
     console.log(error);

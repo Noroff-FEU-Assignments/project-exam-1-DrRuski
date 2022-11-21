@@ -4,7 +4,6 @@ import {
   carouselContainer,
   nextButton,
   prevButton,
-  test,
 } from "./containers/containers.js";
 
 const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=100";
@@ -32,21 +31,21 @@ async function getBlogPosts() {
 
       if (postTags.toLowerCase().startsWith("latest")) {
         carouselContainer.innerHTML += `<li class="latestPost flex-vert">
-                                <img class="postImage"postImage src="${imgUrl}">
-                                <p>${postTags}</p>
+                                <img class="postImageSlider" src="${imgUrl}">
+                                <div class="flex-horiz"><span class="${postTags} blogPostTags">${postTags}</span></div>
                                 <h4>${postTitle}</h4>
                                 <p>${excerpt}</p>
-                                <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
+                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
                               </li>`;
       }
 
       if (postTags.toLowerCase().startsWith("popular")) {
-        indexMidSection.innerHTML += `<div>
-                                <img class="postImage"postImage src="${imgUrl}">
-                                <p>${postTags}</p>
+        indexMidSection.innerHTML += `<div class="popularPost flex-vert">
+                                <img class="postImagePopular" src="${imgUrl}">
+                                <p class="${postTags} blogPostTags">${postTags}</p>
                                 <h4>${postTitle}</h4>
                                 <p>${excerpt}</p>
-                                <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
+                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
                               </div>`;
       }
 
@@ -54,15 +53,16 @@ async function getBlogPosts() {
         !postTags.toLowerCase().startsWith("popular") &&
         !postTags.toLowerCase().startsWith("latest")
       ) {
-        indexBottomSection.innerHTML += `<div>
-                                <img class="postImage"postImage src="${imgUrl}">
-                                <p>${postTags}</p>
+        indexBottomSection.innerHTML += `<div class="bottomPosts flex-vert">
+                                <img class="bottomPostImage" src="${imgUrl}">
+                                <p class="${postTags} blogPostTags">${postTags}</p>
                                 <h4>${postTitle}</h4>
-                                <p>${excerpt}</p>
-                                <div class="flex-horiz"><p class="subtext">${author}</p><a class="subtext">#${category}</a></div>
+                                <div class="flex-horiz"><p class="subtext">${author} | <a href="#" class="subtext ${category}">#${category}</a></p></div>
                               </div>`;
       }
     });
+
+    setListeners();
   } catch (error) {
     console.log(error);
   }
@@ -70,12 +70,15 @@ async function getBlogPosts() {
 
 getBlogPosts();
 
-prevButton.addEventListener("click", () => {
-  const slideWidth = test.clientWidth;
-  carouselContainer.scrollLeft -= slideWidth;
-});
+function setListeners() {
+  const test = document.querySelector(".latestPost");
+  prevButton.addEventListener("click", () => {
+    const slideWidth = test.clientWidth;
+    carouselContainer.scrollLeft -= slideWidth;
+  });
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = test.clientWidth;
-  carouselContainer.scrollLeft += slideWidth;
-});
+  nextButton.addEventListener("click", () => {
+    const slideWidth = test.clientWidth;
+    carouselContainer.scrollLeft += slideWidth;
+  });
+}

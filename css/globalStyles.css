@@ -23,6 +23,7 @@ img {
 @media only screen and (min-width: 600px) {
 
     main {
+        gap: 50px;
         padding: 2rem;
         max-width: 1440px;
         margin: auto;
@@ -159,4 +160,38 @@ img {
         color: var(--main-accent-color);
         text-decoration: underline;
     }
+
+    /* Blog Post Tags */
+
+    .blogPostTags {
+        border-radius: 20px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .News {
+        background-color: var(--third-tag-color);
+        color: var(--main-text-color);
+    }
+
+    .Review {
+        color: var(--main-text-color);
+        background-color: var(--main-accent-color);
+    }
+
+    .Latest {
+        color: var(--main-text-color);
+        background-color: var(--first-tag-color);
+    }
+
+    .Tech,
+    .Gaming,
+    .Movies,
+    .Tv-Series {
+        text-decoration: none;
+        text-transform: uppercase
+    }
+
+
+
 }

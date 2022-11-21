@@ -4,7 +4,7 @@ export const indexBottomSection = document.querySelector(".bottomSection");
 
 // Carousel
 export const carouselContainer = document.querySelector(".carouselContainer");
-export const test = document.querySelector(".carouselContainer > li");
+
 export const prevButton = document.getElementById("carouselArrowLeft");
 export const nextButton = document.getElementById("carouselArrowRight");
 
