@@ -67,6 +67,10 @@ p {
     max-width: 1440px;
 }
 
+.blogPost-width {
+    max-width: 720px;
+}
+
 
 /* Color */
 

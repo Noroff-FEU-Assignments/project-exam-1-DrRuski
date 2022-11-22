@@ -1,6 +1,6 @@
 import { blogListContainer } from "./containers/containers.js";
 
-const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=100";
+const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=20";
 
 async function getBlogPosts() {
   try {
@@ -10,6 +10,7 @@ async function getBlogPosts() {
     console.log(blogPosts);
 
     blogPosts.map((post) => {
+      const postId = `${post.id}`;
       const imgUrl = `${post._embedded["wp:featuredmedia"][0].source_url}`;
       const postTitle = `${post.title.rendered}`;
       const category = `${post._embedded["wp:term"][0]
@@ -30,16 +31,14 @@ async function getBlogPosts() {
       ) {
         blogListContainer.innerHTML += `
                                 <div class="blogPostWrapper flex-vert">
-                                  <a href="#"
-                                    <div>
-                                        <img class="postImage" src="${imgUrl}">
-                                        <p class="${postTags} blogPostTags">${postTags}</p>
-                                        <h4>${postTitle}</h4>
-                                      <div class="flex-horiz">
-                                        <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
-                                      </div>
-                                    </div>
+                                  <a href="individualBlog.html?id=${postId}">
+                                    <img class="postImage" src="${imgUrl}">
+                                    <p class="${postTags} blogPostTags">${postTags}</p>
+                                    <h4>${postTitle}</h4>
                                   </a>
+                                  <div class="flex-horiz">
+                                    <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
+                                  </div>
                                 </div>`;
       }
     });

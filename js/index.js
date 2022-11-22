@@ -6,7 +6,7 @@ import {
   prevButton,
 } from "./containers/containers.js";
 
-const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=100";
+const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=30";
 
 async function getBlogPosts() {
   try {
@@ -16,6 +16,7 @@ async function getBlogPosts() {
     console.log(blogPosts);
 
     blogPosts.map((post) => {
+      const postId = `${post.id}`;
       const imgUrl = `${post._embedded["wp:featuredmedia"][0].source_url}`;
       const postTitle = `${post.title.rendered}`;
       const category = `${post._embedded["wp:term"][0]
@@ -32,7 +33,7 @@ async function getBlogPosts() {
       if (postTags.toLowerCase().startsWith("latest")) {
         carouselContainer.innerHTML += `
                               <li class="latestPost">
-                                <a class="flex-vert" href="#">
+                                <a class="flex-vert" href="individualBlog.html?id=${postId}">
                                     <img class="postImageSlider" src="${imgUrl}">
                                     <div class="flex-horiz"><span class="${postTags} blogPostTags">${postTags}</span></div>
                                     <h4>${postTitle}</h4>
@@ -47,7 +48,7 @@ async function getBlogPosts() {
       if (postTags.toLowerCase().startsWith("popular")) {
         indexMidSection.innerHTML += `
                               <div class="popularPost flex-vert">
-                                <a class="flex-vert" href="#">
+                                <a class="flex-vert" href="individualBlog.html?id=${postId}">
                                     <img class="postImagePopular" src="${imgUrl}">
                                     <p class="${postTags} blogPostTags">${postTags}</p>
                                     <h4>${postTitle}</h4>
@@ -65,7 +66,7 @@ async function getBlogPosts() {
       ) {
         indexBottomSection.innerHTML += `
                               <div class="bottomPosts flex-vert">
-                                <a class="flex-vert" href="#">
+                                <a class="flex-vert" href="individualBlog.html?id=${postId}">
                                     <img class="bottomPostImage" src="${imgUrl}">
                                     <p class="${postTags} blogPostTags">${postTags}</p>
                                     <h4>${postTitle}</h4>

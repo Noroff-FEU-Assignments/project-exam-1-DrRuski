@@ -1,0 +1,9 @@
+.postContent {
+    align-items: center;
+    gap: 25px;
+}
+
+.postTitle {
+    max-width: 600px;
+    text-align: center;
+}
