@@ -19,3 +19,23 @@
     object-fit: cover;
     max-height: 200px;
 }
+
+
+.hiddenContent {
+    display: none;
+}
+
+
+
+.showMoreBtnContainer {
+    margin: auto;
+}
+
+.showMoreBtn {
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--main-bg-color);
+    font-size: 24px;
+}

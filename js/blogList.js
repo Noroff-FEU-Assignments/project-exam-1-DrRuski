@@ -1,4 +1,8 @@
-import { blogListContainer } from "./containers/containers.js";
+import {
+  blogListContainer,
+  showMoreButton,
+  hiddenContentContainer,
+} from "./containers/containers.js";
 
 const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=20";
 
@@ -6,8 +10,6 @@ async function getBlogPosts() {
   try {
     const response = await fetch(url);
     const blogPosts = await response.json();
-
-    console.log(blogPosts);
 
     blogPosts.map((post) => {
       const postId = `${post.id}`;
@@ -22,8 +24,6 @@ async function getBlogPosts() {
       const author = `${post._embedded.author.map(
         (authorName) => authorName.name
       )}`;
-
-      console.log(postTags);
 
       if (
         !postTags.toLowerCase().startsWith("latest") &&
@@ -42,9 +42,32 @@ async function getBlogPosts() {
                                 </div>`;
       }
     });
+
+    // showHiddenContent();
   } catch (error) {
     console.log(error);
   }
 }
 
 getBlogPosts();
+
+function showHiddenContent() {
+  showMoreButton.addEventListener("click", () => {
+    if (
+      postTags.toLowerCase().startsWith("latest") &&
+      postTags.toLowerCase().startsWith("popular")
+    ) {
+      hiddenContentContainer.innerHTML += `
+                              <div class="blogPostWrapper flex-vert">
+                                <a href="individualBlog.html?id=${postId}">
+                                  <img class="postImage" src="${imgUrl}">
+                                  <p class="${postTags} blogPostTags">${postTags}</p>
+                                  <h4>${postTitle}</h4>
+                                </a>
+                                <div class="flex-horiz">
+                                  <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
+                                </div>
+                              </div>`;
+    }
+  });
+}
