@@ -20,3 +20,4 @@ export const showMoreButton = document.querySelector(".showMoreBtn");
 export const individualPostContainer = document.querySelector(
   ".individualPostContainer"
 );
+export const modalContainer = document.getElementById("postModal");

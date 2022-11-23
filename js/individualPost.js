@@ -1,4 +1,7 @@
-import { individualPostContainer } from "./containers/containers.js";
+import {
+  individualPostContainer,
+  modalContainer,
+} from "./containers/containers.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -21,15 +24,35 @@ async function singlePost() {
       .map((tag) => `${tag.name}`)
       .join(" ");
 
+    document.title = `Bongo Bloggers | ${postTitle}`;
     individualPostContainer.innerHTML = `
                                         <div class="postContent flex-vert">
                                             <h1 class="postTitle">${postTitle}</h1>
                                             <h2 class="postAuthor"><span class="byAuthor">BY</span> ${postAuthor}</h2>
-                                            <p>25min read | 231 comments | <a href="#">#${postCategory}</a></p>
-                                            <p>${postTags}</p>
-                                            <img src="${postImage}">
+                                            <p>25min read | 231 comments | <a id="${postCategory}" href="#">#${postCategory}</a></p>
+                                            <p class="${postTags} blogPostTags">${postTags}</p>
+                                            <img id="postImg" src="${postImage}">
                                             <p>${singlePost.content.rendered}</p>
                                         </div>`;
+
+    // Modal Image Function
+    modalContainer.innerHTML = `<span class="close">&times;</span>
+                                <img id="imgBtn" class="modalImg" src="${postImage}">`;
+    const postDisplayedImage = document.getElementById("postImg");
+    const modalImageDisplay = document.getElementById("imgBtn");
+    postDisplayedImage.addEventListener("click", () => {
+      modalContainer.style.display = "block";
+      modalImageDisplay.src = this.src;
+    });
+    const closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      modalContainer.style.display = "none";
+    });
+    modalContainer.addEventListener("click", (e) => {
+      if (e.target === modalContainer) {
+        modalContainer.style.display = "none";
+      }
+    });
   } catch (error) {}
 }
 
