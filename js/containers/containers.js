@@ -13,8 +13,12 @@ export const formBtn = document.querySelector(".formSubmitBtn");
 
 // Blog List
 export const blogListContainer = document.querySelector(".blogListContainer");
-export const hiddenContentContainer = document.querySelector(".hiddenContent");
 export const showMoreButton = document.querySelector(".showMoreBtn");
+export const showLessButton = document.querySelector(".showLessBtn");
+export const showMoreBtnContainer = document.querySelector(
+  ".showMoreBtnContainer"
+);
+export const additionalPosts = document.querySelector(".additionalPosts");
 
 // Individual Blog Post
 export const individualPostContainer = document.querySelector(

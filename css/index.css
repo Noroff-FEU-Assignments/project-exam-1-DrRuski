@@ -28,6 +28,7 @@
     text-decoration: none;
 }
 
+
 .carouselArrow {
     position: absolute;
     top: 0%;
@@ -66,6 +67,7 @@
     object-fit: cover;
     max-height: 400px;
 }
+
 
 
 

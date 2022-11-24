@@ -59,17 +59,11 @@
 
     <main class="flex-vert">
         <section class="blogListContainer flex-horiz"></section>
-
-        <section class="hiddenContent flex-horiz"></section>
-
+        <section class="additionalPosts flex-horiz"></section>
         <div class="showMoreBtnContainer">
             <button class="showMoreBtn"><i class="fa-solid fa-circle-chevron-down"></i></button>
+            <button class="showLessBtn"><i class="fa-solid fa-circle-chevron-up"></i></button>
         </div>
-
-
-
-
-
     </main>
 
     <footer>
@@ -90,7 +84,7 @@
                 </div>
                 <div class="newsletter-input flex-vert">
                     <label for="emailNewsletter">Email</label>
-                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com">
+                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                     <button>SUBSCRIBE</button>
                 </div>
                 <p class="subtext">By subscribing you agree to our <a class="ToS" href="#">Terms of Use</a> and <a

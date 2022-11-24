@@ -1,4 +1,5 @@
-.blogListContainer {
+.blogListContainer,
+.additionalPosts {
     gap: 33px;
     flex-wrap: wrap;
 }
@@ -31,11 +32,18 @@
     margin: auto;
 }
 
-.showMoreBtn {
-    padding: 1rem;
+.showMoreBtn,
+.showLessBtn {
     cursor: pointer;
     border: none;
     background-color: transparent;
     color: var(--main-bg-color);
     font-size: 24px;
+}
+
+.showMoreBtn:hover,
+.showLessBtn:hover {
+    border-radius: 50%;
+    color: var(--main-accent-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

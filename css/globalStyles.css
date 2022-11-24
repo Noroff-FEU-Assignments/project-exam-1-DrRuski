@@ -202,6 +202,12 @@ img {
         text-transform: uppercase
     }
 
-
+    #Tech:hover,
+    #Gaming:hover,
+    #Movies:hover,
+    #Tv-Series:hover,
+    #Sport:hover {
+        text-decoration: underline;
+    }
 
 }

@@ -63,7 +63,7 @@
     <main>
         <section class="about-wrapper flex-vert main-width">
             <div class="about-banner">
-                <img src="assets/images/About Us Banner.jpg" alt="">
+                <img  class="aboutImage" src="assets/images/About Us Banner.jpg" alt="">
             </div>
             <div class="about-text-wrapper flex-vert">
                 <h4>“Bongo Blogsters” is an established digital entertainment blog website offering unparalleled level
@@ -96,7 +96,7 @@
                 </div>
                 <div class="newsletter-input flex-vert">
                     <label for="emailNewsletter">Email</label>
-                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com">
+                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                     <button>SUBSCRIBE</button>
                 </div>
                 <p class="subtext">By subscribing you agree to our <a class="ToS" href="#">Terms of Use</a> and <a

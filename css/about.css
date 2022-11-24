@@ -29,3 +29,7 @@
 .contactBtn a:hover {
     text-decoration: underline;
 }
+
+.aboutImage{
+    border-radius: 5px;
+}

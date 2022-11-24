@@ -34,6 +34,7 @@
 #postImg {
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 #postImg:hover {
@@ -56,6 +57,7 @@
     display: block;
     width: 80%;
     max-width: 1000px;
+    border-radius: 5px;
 
 }
 

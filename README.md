@@ -26,13 +26,12 @@ The content of the blog specific page should be dynamically built using a query 
 If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
 
 ### Contact page
-
 Create a contact us page, there should be 4 textboxes on this page.
 
-- Name (Should be more than 5 characters long)
-- Email address (Must be a valid email address)
-- Subject (Should be more than 15 characters long)
-- Message content (Should be more than 25 characters long)
+- Name (Should be more than 5 characters long) ✔️
+- Email address (Must be a valid email address) ✔️
+- Subject (Should be more than 15 characters long) ✔️
+- Message content (Should be more than 25 characters long) ✔️
 
 Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
 
@@ -42,8 +41,8 @@ The content for your website will be stored on a WordPress installation used as 
 
 The project has two aspects:
 
-- API from your WordPress installation
-- Your website built with HTML, CSS and JavaScript
+- API from your WordPress installation ✔️
+- Your website built with HTML, CSS and JavaScript ✔️
 
 You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
 
@@ -51,12 +50,12 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 
 ## Level 1 Process
 
-1. Decide on the theme for the blog you’re going to make
-2. Create a prototype of the website
-3. Install WordPress on your web host and add the blogs on the admin panel.
-4. Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5. Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6. Install Hotjar on your website.
+1. Decide on the theme for the blog you’re going to make ✔️
+2. Create a prototype of the website ✔️
+3. Install WordPress on your web host and add the blogs on the admin panel. ✔️
+4. Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify ✔️
+5. Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data. ✔️
+6. Install Hotjar on your website. ✔️
 7. Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
 8. Write a report documenting your project (template provided in this repository).
 9. Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
