@@ -172,43 +172,6 @@ img {
         width: 150px;
     }
 
-    .News {
-        background-color: var(--third-tag-color);
-        color: var(--main-text-color);
-    }
-
-    .Popular {
-        color: var(--main-text-color);
-        background-color: var(--second-tag-color);
-    }
-
-    .Review {
-        color: var(--main-text-color);
-        background-color: var(--main-accent-color);
-    }
-
-    .Latest {
-        color: var(--main-text-color);
-        background-color: var(--first-tag-color);
-    }
-
-    #Tech,
-    #Gaming,
-    #Movies,
-    #Tv-Series,
-    #Sport {
-        color: var(--main-accent-color);
-        text-decoration: none;
-        text-transform: uppercase
-    }
-
-    #Tech:hover,
-    #Gaming:hover,
-    #Movies:hover,
-    #Tv-Series:hover,
-    #Sport:hover {
-        text-decoration: underline;
-    }
 
     /* Loading */
     .loaderContainer {
@@ -254,4 +217,247 @@ img {
         }
     }
 
+}
+
+
+
+
+
+@media only screen and (max-width: 599px) {
+
+    main {
+        gap: 50px;
+        padding: 1rem;
+    }
+
+    /* Index */
+    nav {
+        background-color: #000;
+    }
+
+    #currentActive {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .userProfile,
+    .menuAnchors {
+        gap: 0.5rem;
+    }
+
+    .userProfile a,
+    .menuAnchors a {
+        font-size: small;
+        color: #eee;
+        text-decoration: none;
+        padding: 0.3rem;
+    }
+
+    .createAccountBtn {
+        background-color: #3E54A3;
+        border-radius: 0.5rem;
+    }
+
+    .navContainer-wrapper {
+        flex-direction: column;
+
+    }
+
+    .logo-menu-wrapper,
+    .input-userProfile-wrapper {
+        align-items: center;
+        gap: 5.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #menu-search {
+        color: var(--main-text-color);
+        background-color: #000;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid var(--main-text-color);
+    }
+
+    #menu-search::placeholder {
+        color: var(--main-text-color);
+    }
+
+    .signIn:hover,
+    .createAccountBtn:hover {
+        text-decoration: underline;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        background-color: var(--main-bg-color);
+    }
+
+    .footer-wrapper {
+        margin: auto;
+        max-width: 1440px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 75px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+
+    .footer-SoMe {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 162px;
+    }
+
+    .newsletter-form-container {
+        color: var(--main-text-color);
+        max-width: 260px;
+        gap: 10px;
+    }
+
+    .newsletter-input {
+        gap: 10px;
+    }
+
+    .newsletter-input label {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .newsletter-input input {
+        color: var(--main-text-color);
+        background-color: #000;
+        border: none;
+        border-bottom: 1px solid var(--main-text-color);
+    }
+
+    .newsletter-input button {
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        max-width: 100px;
+        padding: 0.4rem;
+        border: none;
+        border-radius: 5px;
+        color: var(--main-text-color);
+        background-color: var(--main-accent-color);
+    }
+
+    #emailNewsletter::placeholder {
+        color: var(--main-text-color);
+    }
+
+    .ToS {
+        color: var(--main-accent-color);
+        text-decoration: underline;
+    }
+
+
+    /* Blog Post Tags */
+    .blogPostTags {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 400;
+        border-radius: 20px;
+        text-align: center;
+        width: 100px;
+    }
+
+
+    /* Loading */
+    .loaderContainer {
+        background-color: #fff;
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .loaderContainer div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        animation: loaderContainer 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: var(--main-accent-color) transparent transparent transparent;
+    }
+
+    .loaderContainer div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+
+    .loaderContainer div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+
+    .loaderContainer div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+
+    @keyframes loaderContainer {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+}
+
+
+/* Blog Post Tags */
+.News {
+    background-color: var(--third-tag-color);
+    color: var(--main-text-color);
+}
+
+.Popular {
+    color: var(--main-text-color);
+    background-color: var(--second-tag-color);
+}
+
+.Review {
+    color: var(--main-text-color);
+    background-color: var(--main-accent-color);
+}
+
+.Latest {
+    color: var(--main-text-color);
+    background-color: var(--first-tag-color);
+}
+
+#Tech,
+#Gaming,
+#Movies,
+#Tv-Series,
+#Sport {
+    color: var(--main-accent-color);
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+#Tech:hover,
+#Gaming:hover,
+#Movies:hover,
+#Tv-Series:hover,
+#Sport:hover {
+    text-decoration: underline;
 }

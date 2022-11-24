@@ -1,127 +1,225 @@
-/* Top Section */
-.topSection {
-    overflow: hidden;
-    position: relative;
+@media only screen and (min-width: 600px) {
+
+    /* Top Section */
+    .topSection {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carouselContainer {
+
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    .latestPost {
+        gap: 0.4rem;
+        width: 100%;
+        height: 100%;
+        flex: 1 0 100%;
+    }
+
+    .latestPost a {
+        gap: 0.4rem;
+        color: var(--main-bg-color);
+        text-decoration: none;
+    }
+
+
+    .carouselArrow {
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        margin: auto;
+        height: 4rem;
+        background-color: var(--main-text-color);
+        border: none;
+        width: 2rem;
+        font-size: 3rem;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 100ms;
+    }
+
+    .carouselArrow:hover,
+    .carouselArrow:focus {
+        opacity: 1;
+    }
+
+    #carouselArrowLeft {
+        left: 0;
+        padding-left: 0.25rem;
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    #carouselArrowRight {
+        right: 0;
+        padding-left: 0.75rem;
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    .postImageSlider {
+        border-radius: 5px;
+        object-fit: cover;
+        max-height: 400px;
+    }
+
+
+    /* Middle Section */
+    .midSection {
+        gap: 38px;
+    }
+
+    .popularPost {
+        gap: 0.4rem;
+    }
+
+    .popularPost a {
+        color: var(--main-bg-color);
+        text-decoration: none;
+        gap: 0.4rem;
+    }
+
+    .postImagePopular {
+        border-radius: 5px;
+        object-fit: cover;
+        max-height: 456px;
+    }
+
+    .paragraphLength p {
+        position: relative;
+        overflow: hidden;
+        height: 42px;
+    }
+
+
+    /* Bottom Section */
+    .bottomSection {
+        gap: 33px;
+        flex-wrap: wrap;
+    }
+
+    .bottomPostImage {
+        border-radius: 5px;
+        object-fit: cover;
+        max-height: 200px;
+    }
+
+    .bottomPosts {
+        gap: 0.4rem;
+        max-width: 335px;
+    }
+
+    .bottomPosts a {
+        gap: 0.4rem;
+    }
+
+    .bottomPosts a {
+        color: var(--main-bg-color);
+        text-decoration: none;
+    }
 }
 
-.carouselContainer {
-
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overflow: scroll;
-    scrollbar-width: none;
-}
-
-.latestPost {
-    gap: 0.4rem;
-    width: 100%;
-    height: 100%;
-    flex: 1 0 100%;
-}
-
-.latestPost a {
-    gap: 0.4rem;
-    color: var(--main-bg-color);
-    text-decoration: none;
-}
-
-
-.carouselArrow {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    margin: auto;
-    height: 4rem;
-    background-color: var(--main-text-color);
-    border: none;
-    width: 2rem;
-    font-size: 3rem;
-    padding: 0;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 100ms;
-}
-
-.carouselArrow:hover,
-.carouselArrow:focus {
-    opacity: 1;
-}
-
-#carouselArrowLeft {
-    left: 0;
-    padding-left: 0.25rem;
-    border-radius: 0 2rem 2rem 0;
-}
-
-#carouselArrowRight {
-    right: 0;
-    padding-left: 0.75rem;
-    border-radius: 2rem 0 0 2rem;
-}
-
-.postImageSlider {
-    border-radius: 5px;
-    object-fit: cover;
-    max-height: 400px;
-}
 
 
 
 
-/* Middle Section */
-.midSection {
-    gap: 38px;
-}
+@media only screen and (max-width: 599px) {
 
-.popularPost {
-    gap: 0.4rem;
-}
+    /* Top Section */
+    .topSection {
+        overflow: hidden;
+        position: relative;
+    }
 
-.popularPost a {
-    color: var(--main-bg-color);
-    text-decoration: none;
-    gap: 0.4rem;
-}
+    .carouselContainer {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        overflow: scroll;
+    }
 
-.postImagePopular {
-    border-radius: 5px;
-    object-fit: cover;
-    max-height: 456px;
-}
+    .latestPost {
+        gap: 0.4rem;
+        width: 100%;
+        height: 100%;
+        flex: 1 0 100%;
+    }
 
-.lengthTest p {
-    position: relative;
-    overflow: hidden;
-    height: 42px;
-}
+    .latestPost a {
+        gap: 0.4rem;
+        color: var(--main-bg-color);
+        text-decoration: none;
+    }
+
+    .carouselArrow {
+        display: none;
+    }
+
+    .postImageSlider {
+        border-radius: 5px;
+        object-fit: cover;
+    }
 
 
+    /* Middle Section */
+    .midSection {
+        flex-direction: column;
+        gap: 25px;
+    }
 
-/* Bottom Section */
-.bottomSection {
-    gap: 33px;
-    flex-wrap: wrap;
-}
+    .popularPost {
+        gap: 0.4rem;
+    }
 
-.bottomPostImage {
-    border-radius: 5px;
-    object-fit: cover;
-    max-height: 200px;
-}
+    .popularPost a {
+        color: var(--main-bg-color);
+        text-decoration: none;
+        gap: 0.4rem;
+    }
 
-.bottomPosts {
-    gap: 0.4rem;
-    max-width: 335px;
-}
+    .postImagePopular {
+        border-radius: 5px;
+        object-fit: cover;
+    }
 
-.bottomPosts a {
-    gap: 0.4rem;
-}
+    .paragraphLength p {
+        display: none;
+    }
 
-.bottomPosts a {
-    color: var(--main-bg-color);
-    text-decoration: none;
+
+    /* Bottom Section */
+    .bottomSection {
+        gap: 1.5rem 0rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .bottomPostImage {
+        border-radius: 5px;
+        object-fit: cover;
+        max-height: 109px;
+    }
+
+    .bottomPosts {
+        gap: 0.4rem;
+        max-width: 190px;
+    }
+
+    .bottomPosts a {
+        gap: 0.4rem;
+    }
+
+    .bottomPosts a {
+        color: var(--main-bg-color);
+        text-decoration: none;
+    }
 }

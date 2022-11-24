@@ -53,7 +53,7 @@ async function getBlogPosts() {
                                     <img class="postImagePopular" src="${imgUrl}">
                                     <p class="${postTags} blogPostTags">${postTags}</p>
                                     <h4>${postTitle}</h4>
-                                    <span class="lengthTest">${excerpt}</span>
+                                    <span class="paragraphLength">${excerpt}</span>
                                 </a>
                                 <div class="flex-horiz">
                                     <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
