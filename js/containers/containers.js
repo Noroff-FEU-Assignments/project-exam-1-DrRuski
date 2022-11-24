@@ -1,6 +1,7 @@
 // Index - Home
 export const indexMidSection = document.querySelector(".midSection");
 export const indexBottomSection = document.querySelector(".bottomSection");
+export const topSection = document.querySelector(".topSection");
 
 // Carousel
 export const carouselContainer = document.querySelector(".carouselContainer");

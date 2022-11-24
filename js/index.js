@@ -4,6 +4,7 @@ import {
   carouselContainer,
   nextButton,
   prevButton,
+  topSection,
 } from "./containers/containers.js";
 
 const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=30";
@@ -13,7 +14,7 @@ async function getBlogPosts() {
     const response = await fetch(url);
     const blogPosts = await response.json();
 
-    console.log(blogPosts);
+    carouselContainer.innerHTML = "";
 
     blogPosts.map((post) => {
       const postId = `${post.id}`;

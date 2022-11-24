@@ -64,7 +64,14 @@
         <section class="topSection">
             <button class="carouselArrow flex-horiz" id="carouselArrowLeft">&#8249;</button>
             <button class="carouselArrow flex-horiz" id="carouselArrowRight">&#8250;</button>
-            <ul class="carouselContainer flex-horiz" id="carouselContainer"></ul>
+            <ul class="carouselContainer flex-horiz" id="carouselContainer">
+                <div class="loaderContainer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </ul>
         </section>
 
 
@@ -94,7 +101,8 @@
                 </div>
                 <div class="newsletter-input flex-vert">
                     <label for="emailNewsletter">Email</label>
-                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                    <input type="email" id="emailNewsletter" placeholder="JohnDoe@gmail.com" required
+                        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                     <button>SUBSCRIBE</button>
                 </div>
                 <p class="subtext">By subscribing you agree to our <a class="ToS" href="#">Terms of Use</a> and <a
