@@ -1,5 +1,4 @@
 /* Font */
-
 @font-face {
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -15,6 +14,9 @@ p {
     margin: 0;
     padding: 0;
 }
+
+
+
 @media only screen and (min-width: 600px) {
 h1 {
     font-size: 32px;
@@ -60,9 +62,11 @@ p {
 }
 }
 
+
+
 @media only screen and (max-width: 599px) {
     h1 {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 700;
     }
     
@@ -92,12 +96,12 @@ p {
     
     .subtext {
         font-size: 10px;
-    }
-
-    
+    }    
 }
-/* Flex */
 
+
+
+/* Flex */
 .flex-horiz {
     display: flex;
 }
@@ -109,9 +113,7 @@ p {
 
 
 
-
 /* Color */
-
 :root {
     --main-bg-color: #000;
     --main-text-color: #eee;

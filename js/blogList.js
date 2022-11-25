@@ -12,9 +12,9 @@ async function getBlogPosts() {
   try {
     const response = await fetch(url);
     const blogPosts = await response.json();
-
+    
     blogListContainer.innerHTML = "";
-
+    
     blogPosts.map((post) => {
       const postId = `${post.id}`;
       const imgUrl = `${post._embedded["wp:featuredmedia"][0].source_url}`;

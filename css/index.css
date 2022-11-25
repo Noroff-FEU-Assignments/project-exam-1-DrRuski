@@ -210,6 +210,7 @@
     }
 
     .bottomPosts {
+        padding: 0.2rem;
         gap: 0.4rem;
         max-width: 190px;
     }

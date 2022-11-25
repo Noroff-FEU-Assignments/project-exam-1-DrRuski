@@ -1,3 +1,4 @@
+@media only screen and (min-width: 600px) {
 .blogListContainer,
 .additionalPosts {
     gap: 33px;
@@ -46,4 +47,51 @@
     border-radius: 50%;
     color: var(--main-accent-color);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+}
+
+
+
+@media only screen and (max-width: 599px) {
+
+.blogListContainer,
+.additionalPosts {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.blogPostWrapper {
+    gap: 0.4rem;
+    max-width: 190px;
+}
+
+.blogPostWrapper a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.postImage {
+
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 109px;
+}
+
+
+.hiddenContent {
+    display: none;
+}
+
+.showMoreBtnContainer {
+    margin: auto;
+}
+
+.showMoreBtn,
+.showLessBtn {
+    border-radius: 50%;
+    color: var(--main-accent-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 24px;
+}
+
 }

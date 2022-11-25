@@ -378,6 +378,7 @@ img {
 
     /* Loading */
     .loaderContainer {
+        margin: auto;
         background-color: #fff;
         display: inline-block;
         position: relative;
