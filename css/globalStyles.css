@@ -232,6 +232,9 @@ img {
 
     /* Index */
     nav {
+        width: 100%;
+        z-index: 1;
+        position: fixed;
         background-color: #000;
     }
 
@@ -242,6 +245,7 @@ img {
 
     .userProfile,
     .menuAnchors {
+        flex-direction: column;
         gap: 0.5rem;
     }
 
@@ -254,6 +258,7 @@ img {
     }
 
     .createAccountBtn {
+        text-align: center;
         background-color: #3E54A3;
         border-radius: 0.5rem;
     }
@@ -265,8 +270,10 @@ img {
 
     .logo-menu-wrapper,
     .input-userProfile-wrapper {
-        align-items: center;
-        gap: 5.5rem;
+        max-width: 150px;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 3rem;
     }
 
     .logo {
@@ -285,10 +292,6 @@ img {
         color: var(--main-text-color);
     }
 
-    .signIn:hover,
-    .createAccountBtn:hover {
-        text-decoration: underline;
-    }
 
 
     /* Footer */
