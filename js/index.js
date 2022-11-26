@@ -36,11 +36,11 @@ async function getBlogPosts() {
                               <li class="latestPost">
                                 <a class="flex-vert" href="individualBlog.html?id=${postId}">
                                     <img class="postImageSlider" src="${imgUrl}">
-                                    <div class="flex-horiz"><span class="${postTags} blogPostTags">${postTags}</span></div>
-                                    <h4>${postTitle}</h4>
+                                    <div class="flex-horiz mobilePadding"><span class="${postTags} blogPostTags">${postTags}</span></div>
+                                    <h4 class="mobilePadding">${postTitle}</h4>
                                     <p>${excerpt}</p>
                                 </a>
-                                  <div class="flex-horiz">
+                                  <div class="flex-horiz mobilePadding">
                                     <p class="subtext">${author} | <a href="#" class="subtext" id="${category}">#${category}</a></p>
                                   </div>
                               </li>`;

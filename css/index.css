@@ -132,6 +132,7 @@
 
 @media only screen and (max-width: 599px) {
 
+
     /* Top Section */
     .topSection {
         overflow: hidden;
@@ -198,7 +199,7 @@
 
     /* Bottom Section */
     .bottomSection {
-        gap: 1.5rem 0rem;
+        gap: 1rem 0rem;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -206,13 +207,14 @@
     .bottomPostImage {
         border-radius: 5px;
         object-fit: cover;
-        max-height: 109px;
+        max-height: 100px;
     }
 
     .bottomPosts {
-        padding: 0.2rem;
+        padding: 0.3rem;
+        max-width: 170px;
         gap: 0.4rem;
-        max-width: 190px;
+        
     }
 
     .bottomPosts a {
