@@ -30,7 +30,7 @@
 
     <header>
         <nav>
-            <div class="navContainer-wrapper flex-horiz">
+            <div class="navContainer-wrapper flex-horiz desktopMenu">
                 <div class="logo-menu-wrapper flex-horiz">
                     <div class="logo">
                         <a href="#"><img src="/assets/images/logo.svg" alt="Website Logo"></a>
@@ -52,6 +52,20 @@
                         <a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
                     </div>
                 </div>
+            </div>
+
+            <div class="mobileMenuContainer flex-horiz">
+                <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                <ul class="mobileMenu flex-vert">
+                    <li><a class="menuItem" href="index.html">HOME</a></li>
+                    <li><a class="menuItem" href="blogList.html">BLOGS</a></li>
+                    <li><a class="menuItem" id="currentActive" href="about.html">ABOUT</a></li>
+                    <li><a class="menuItem" href="contact.html">CONTACT</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="menuIcon fa-solid fa-bars"></i>
+                    <i class="closeIcon fa-solid fa-xmark"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -114,6 +128,9 @@
         <p class="subtext" style="color: var(--main-text-color); text-align: center; padding: 15px 0px 5px 0px;">© 2022
             Bongo Blogsters</p>
     </footer>
+
+    <script src="js/mobileNav/mobileNav.js" type="module"></script>
 </body>
+
 
 </html>

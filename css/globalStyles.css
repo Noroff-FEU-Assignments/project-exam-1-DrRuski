@@ -246,6 +246,15 @@ img {
         background-color: #000;
     }
 
+    .logo {
+        padding: 0.8rem;
+    }
+
+    .logo img {
+        max-width: 44px;
+    }
+
+
     .desktopMenu {
         display: none;
     }
@@ -255,7 +264,10 @@ img {
         font-weight: bold;
     }
 
-
+    .menuItem {
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
 
     .hamburger {
         position: fixed;
@@ -286,6 +298,7 @@ img {
         color: var(--main-text-color);
         list-style: none;
         padding-top: 4rem;
+        gap: 1.5rem;
     }
 
     .showMenu {
