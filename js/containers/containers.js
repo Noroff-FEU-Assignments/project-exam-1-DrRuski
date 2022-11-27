@@ -26,3 +26,10 @@ export const individualPostContainer = document.querySelector(
   ".individualPostContainer"
 );
 export const modalContainer = document.getElementById("postModal");
+
+// Mobile Navigation
+export const mobileMenu = document.querySelector(".mobileMenu");
+export const menuItems = document.querySelectorAll(".menuItem");
+export const hamburger = document.querySelector(".hamburger");
+export const closeBtn = document.querySelector(".closeIcon");
+export const menuOpenBtn = document.querySelector(".menuIcon");

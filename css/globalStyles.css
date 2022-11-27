@@ -35,6 +35,10 @@ img {
         background-color: #000;
     }
 
+    .mobileMenuContainer {
+        display: none;
+    }
+
     #currentActive {
         text-decoration: underline;
         font-weight: bold;
@@ -225,8 +229,9 @@ img {
 
 @media only screen and (max-width: 599px) {
     body {
-        gap: 25px;
+        gap: 70px;
     }
+
     main {
         gap: 50px;
         padding: 0.5rem;
@@ -234,10 +239,15 @@ img {
 
     /* Index */
     nav {
-        /* width: 100%;
-        z-index: 1;
-        position: fixed; */
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        z-index: 100;
         background-color: #000;
+    }
+
+    .desktopMenu {
+        display: none;
     }
 
     #currentActive {
@@ -245,56 +255,42 @@ img {
         font-weight: bold;
     }
 
-    .userProfile,
-    .menuAnchors {
-        flex-direction: column;
-        gap: 0.5rem;
+
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.7rem;
+        border: var(--main-text-color) solid 1px;
+        background: black;
+        cursor: pointer;
+        color: var(--main-text-color);
     }
 
-    .userProfile a,
-    .menuAnchors a {
-        font-size: small;
-        color: #eee;
-        text-decoration: none;
-        padding: 0.3rem;
-    }
-
-    .createAccountBtn {
-        text-align: center;
-        background-color: #3E54A3;
-        border-radius: 0.5rem;
-    }
-
-    .navContainer-wrapper {
-        flex-direction: column;
-
-    }
-
-    .logo-menu-wrapper,
-    .input-userProfile-wrapper {
-        max-width: 150px;
-        padding: 1rem;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .logo {
+    .closeIcon {
         display: none;
     }
 
-    #menu-search {
+    .mobileMenu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: var(--main-bg-color);
         color: var(--main-text-color);
-        background-color: #000;
-        text-align: center;
-        border: none;
-        border-bottom: 1px solid var(--main-text-color);
+        list-style: none;
+        padding-top: 4rem;
     }
 
-    #menu-search::placeholder {
-        color: var(--main-text-color);
+    .showMenu {
+        transform: translateY(0);
     }
-
-
 
     /* Footer */
     footer {
@@ -467,3 +463,79 @@ img {
 #Sport:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    #currentActive {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .userProfile,
+    .menuAnchors {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .userProfile a,
+    .menuAnchors a {
+        font-size: small;
+        color: #eee;
+        text-decoration: none;
+        padding: 0.3rem;
+    }
+
+    .createAccountBtn {
+        text-align: center;
+        background-color: #3E54A3;
+        border-radius: 0.5rem;
+    }
+
+    .navContainer-wrapper {
+        flex-direction: column;
+
+    }
+
+    .logo-menu-wrapper,
+    .input-userProfile-wrapper {
+        max-width: 150px;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #menu-search {
+        color: var(--main-text-color);
+        background-color: #000;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid var(--main-text-color);
+    }
+
+    #menu-search::placeholder {
+        color: var(--main-text-color);
+    }
+*/

@@ -30,7 +30,7 @@
 
     <header>
         <nav>
-            <div class="navContainer-wrapper flex-horiz">
+            <div class="navContainer-wrapper flex-horiz desktopMenu">
                 <div class="logo-menu-wrapper flex-horiz">
                     <div class="logo">
                         <a href="#"><img src="/assets/images/logo.svg" alt="Website Logo"></a>
@@ -53,6 +53,23 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mobileMenuContainer">
+                <ul class="mobileMenu flex-vert">
+                    <li><a class="menuItem" id="currentActive" href="index.html">HOME</a></li>
+                    <li><a class="menuItem" href="blogList.html">BLOGS</a></li>
+                    <li><a class="menuItem" href="about.html">ABOUT</a></li>
+                    <li><a class="menuItem" href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <button class="hamburger">
+                    <i class="menuIcon fa-solid fa-bars"></i>
+                    <i class="closeIcon fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
         </nav>
     </header>
 
@@ -122,5 +139,6 @@
 </body>
 
 <script src="js/index.js" type="module"></script>
+<script src="js/mobileNav/mobileNav.js" type="module"></script>
 
 </html>
