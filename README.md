@@ -13,7 +13,7 @@ You have been tasked with creating a blog site. You can choose the design and to
 - List of blog posts ✔️
 - Blog post specific pages ✔️
 - Contact page. ✔️
-✔️
+
 ### Home Page ✔️
 The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
 
@@ -64,3 +64,19 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 1. You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
 2. Post the data from the contact form to WordPress so you have the details saved.
 3. Allow users to submit comments on a blog post, and post this data to WordPress
+
+
+
+
+
+
+## From Hotjar Testing - Things to Improve
+
+1. Rework the navigation menu code for better responsiveness. ✔️
+2. Rework the bottom section of the home page for better responsiveness. ✔️
+3. Several people are trying to click on the drop down menu of the FAQs section.
+4. Adjust margin/centering of elements on the mobile version. ✔️
+5. Make the footer newsletter work properly with validation.
+
+
+

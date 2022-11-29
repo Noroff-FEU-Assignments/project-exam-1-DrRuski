@@ -199,26 +199,25 @@
 
     /* Bottom Section */
     .bottomSection {
-        gap: 1rem 0rem;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
     .bottomPostImage {
-        border-radius: 5px;
+        border-radius: 3px;
         object-fit: cover;
-        max-height: 100px;
+        max-height: 90px;
     }
 
     .bottomPosts {
-        padding: 0.3rem;
-        max-width: 170px;
-        gap: 0.4rem;
+        padding: 0.2rem;
+        max-width: 150px;
+        gap: 0.5rem;
         
     }
 
     .bottomPosts a {
-        gap: 0.4rem;
+        gap: 0.5rem;
     }
 
     .bottomPosts a {

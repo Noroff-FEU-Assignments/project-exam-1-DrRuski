@@ -30,39 +30,26 @@
 
     <header>
         <nav>
-            <div class="navContainer-wrapper flex-horiz desktopMenu">
-                <div class="logo-menu-wrapper flex-horiz">
-                    <div class="logo">
-                        <a href="#"><img src="/assets/images/logo.svg" alt="Website Logo"></a>
-                    </div>
-                    <div class="menuAnchors flex-horiz">
-                        <a href="index.html">HOME</a>
-                        <a href="blogList.html">BLOGS</a>
-                        <a id="currentActive" href="about.html">ABOUT</a>
-                        <a href="contact.html">CONTACT</a>
-                    </div>
+            <div class="mobileMenuContainer desktopMenuContainer flex-horiz">
+                <div class="logoMenuContainer flex-horiz">
+                    <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt="Website Logo"></a>
+                    <ul class="mobileMenu desktopMenuList">
+                        <li><a class="menuItem" href="index.html">HOME</a></li>
+                        <li><a class="menuItem" href="blogList.html">BLOGS</a></li>
+                        <li><a class="menuItem" id="currentActive" href="about.html">ABOUT</a></li>
+                        <li><a class="menuItem" href="contact.html">CONTACT</a></li>
+                    </ul>
                 </div>
 
-                <div class="input-userProfile-wrapper flex-horiz">
-                    <div>
-                        <input type="search" name="Search" id="menu-search" placeholder="Search">
-                    </div>
-                    <div class="userProfile flex-horiz">
-                        <a class="signIn" href="#">Sign In</a>
-                        <a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
-                    </div>
+                <div class="utilityContainer mobileHidden flex-horiz">
+                    <input type="search" name="Search" class="searchInput" id="menu-search" placeholder="Search">
+                    <ul class="userProfile flex-horiz">
+                        <li><a class="signIn" href="#">Sign In</a></li>
+                        <li><a class="createAccountBtn" href="#">Create Account <i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <div class="mobileMenuContainer flex-horiz">
-                <a class="logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-                <ul class="mobileMenu flex-vert">
-                    <li><a class="menuItem" href="index.html">HOME</a></li>
-                    <li><a class="menuItem" href="blogList.html">BLOGS</a></li>
-                    <li><a class="menuItem" id="currentActive" href="about.html">ABOUT</a></li>
-                    <li><a class="menuItem" href="contact.html">CONTACT</a></li>
-                </ul>
-                <button class="hamburger">
+                <button class="hamburger desktopHidden">
                     <i class="menuIcon fa-solid fa-bars"></i>
                     <i class="closeIcon fa-solid fa-xmark"></i>
                 </button>

@@ -22,6 +22,10 @@ img {
 
 @media only screen and (min-width: 600px) {
 
+    .desktopHidden {
+        display: none;
+    }
+
     main {
         gap: 50px;
         padding: 2rem;
@@ -35,43 +39,39 @@ img {
         background-color: #000;
     }
 
-    .mobileMenuContainer {
-        display: none;
+    .desktopMenuContainer {
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 1440px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logoMenuContainer {
+        gap: 4rem;
+    }
+
+    .desktopMenuList {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        list-style: none;
+    }
+
+    .menuItem {
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+
+    .menuItem:hover {
+        color: var(--main-text-color);
+        text-decoration: underline;
+        font-weight: bold;
     }
 
     #currentActive {
         text-decoration: underline;
         font-weight: bold;
-    }
-
-    .userProfile,
-    .menuAnchors {
-        gap: 1rem;
-    }
-
-    .userProfile a,
-    .menuAnchors a {
-        font-size: small;
-        color: #eee;
-        text-decoration: none;
-        padding: 0.7rem;
-    }
-
-    .createAccountBtn {
-        background-color: #3E54A3;
-        border-radius: 3rem;
-    }
-
-    .navContainer-wrapper {
-        max-width: 1440px;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    .logo-menu-wrapper,
-    .input-userProfile-wrapper {
-        align-items: center;
-        gap: 5.5rem;
     }
 
     #menu-search {
@@ -86,10 +86,31 @@ img {
         color: var(--main-text-color);
     }
 
+    .utilityContainer {
+        gap: 50px;
+    }
+
+    .userProfile {
+        gap: 25px;
+    }
+
+    .signIn,
+    .createAccountBtn {
+        padding: 0.5rem 1rem;
+        color: var(--main-text-color);
+        text-decoration: none;
+    }
+
     .signIn:hover,
     .createAccountBtn:hover {
         text-decoration: underline;
     }
+
+    .createAccountBtn {
+        background-color: #3E54A3;
+        border-radius: 3rem;
+    }
+
 
 
     /* Footer */
@@ -228,13 +249,18 @@ img {
 
 
 @media only screen and (max-width: 599px) {
+
+    .mobileHidden {
+        display: none;
+    }
+
     body {
         gap: 70px;
     }
 
     main {
         gap: 50px;
-        padding: 0.5rem;
+        padding: 0.6rem;
     }
 
     /* Index */
@@ -246,16 +272,16 @@ img {
         background-color: #000;
     }
 
+
+
     .logo {
-        padding: 0.8rem;
+        position: fixed;
+        left: 1rem;
+        top: 1rem;
+        max-width: 36px;
     }
 
-    .logo img {
-        max-width: 44px;
-    }
-
-
-    .desktopMenu {
+    .searchInput {
         display: none;
     }
 
@@ -286,6 +312,8 @@ img {
     }
 
     .mobileMenu {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         transform: translateY(-100%);
         transition: 0.2s;
@@ -476,79 +504,3 @@ img {
 #Sport:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-    #currentActive {
-        text-decoration: underline;
-        font-weight: bold;
-    }
-
-    .userProfile,
-    .menuAnchors {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .userProfile a,
-    .menuAnchors a {
-        font-size: small;
-        color: #eee;
-        text-decoration: none;
-        padding: 0.3rem;
-    }
-
-    .createAccountBtn {
-        text-align: center;
-        background-color: #3E54A3;
-        border-radius: 0.5rem;
-    }
-
-    .navContainer-wrapper {
-        flex-direction: column;
-
-    }
-
-    .logo-menu-wrapper,
-    .input-userProfile-wrapper {
-        max-width: 150px;
-        padding: 1rem;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    #menu-search {
-        color: var(--main-text-color);
-        background-color: #000;
-        text-align: center;
-        border: none;
-        border-bottom: 1px solid var(--main-text-color);
-    }
-
-    #menu-search::placeholder {
-        color: var(--main-text-color);
-    }
-*/
