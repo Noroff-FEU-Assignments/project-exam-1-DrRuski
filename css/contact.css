@@ -75,81 +75,138 @@
 
 
 
+@media only screen and (min-width: 600px) {
+    /* Form */
 
-/* Form */
+    .contactMainContainer {
+        gap: 25px;
+    }
 
-.contactMainContainer {
-    gap: 25px;
+    .contactMainContainer h2 {
+        margin: auto;
+    }
+
+    .contactFormContainer {
+        flex-wrap: wrap;
+        gap: 50px;
+
+    }
+
+    .personalInfoContainer {
+        width: 250px;
+        gap: 25px;
+    }
+
+    .full-name,
+    .subject,
+    .email-address,
+    .textAreaContainer {
+        gap: 5px;
+    }
+
+    #fullName,
+    #subject,
+    #email {
+        color: var(--main-bg-color);
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid var(--main-bg-color);
+    }
+
+    #problemDetails {
+        width: 300px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+
+    #problemDetails::placeholder,
+    #fullName::placeholder,
+    #subject::placeholder,
+    #email::placeholder {
+        font-family: "Inter", sans-serif;
+    }
+
+    .formSubmitBtn {
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--main-accent-color);
+        color: var(--main-text-color);
+        padding: 0.5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .formSubmitBtn:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
 }
 
-.contactMainContainer h2 {
-    margin: auto;
+@media only screen and (max-width: 599px) {
+    /* Form */
+
+    .contactMainContainer {
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contactMainContainer h2 {
+        margin: auto;
+    }
+
+    .contactFormContainer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .personalInfoContainer {
+        width: 250px;
+        gap: 1.5rem;
+    }
+
+
+    .full-name,
+    .subject,
+    .email-address,
+    .textAreaContainer {
+        gap: 5px;
+    }
+
+    #fullName,
+    #subject,
+    #email {
+        color: var(--main-bg-color);
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid var(--main-bg-color);
+    }
+
+    #problemDetails {
+        width: 250px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+
+    #problemDetails::placeholder,
+    #fullName::placeholder,
+    #subject::placeholder,
+    #email::placeholder {
+        font-family: "Inter", sans-serif;
+    }
+
+    .formSubmitBtn {
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--main-accent-color);
+        color: var(--main-text-color);
+        padding: 0.5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .formSubmitBtn:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
 }
-
-.contactFormContainer {
-    flex-wrap: wrap;
-    gap: 50px;
-
-}
-
-.personalInfoContainer {
-    width: 250px;
-    gap: 25px;
-}
-
-.full-name,
-.subject,
-.email-address,
-.textAreaContainer {
-    gap: 5px;
-}
-
-#fullName,
-#subject,
-#email {
-    color: var(--main-bg-color);
-    background-color: #fff;
-    border: none;
-    border-bottom: 1px solid var(--main-bg-color);
-}
-
-#problemDetails {
-    border: 1px solid #000;
-    border-radius: 3px;
-}
-
-#problemDetails::placeholder,
-#fullName::placeholder,
-#subject::placeholder,
-#email::placeholder {
-    font-family: "Inter", sans-serif;
-}
-
-.formSubmitBtn {
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--main-accent-color);
-    color: var(--main-text-color);
-    padding: 0.5rem 2rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.formSubmitBtn:active {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-
-/* if (time left){
-
-/* .fileUploaded {
-    border: 1px solid #000;
-    border-radius: 3px;
-    padding: 0.5rem;
-    align-items: center;
-    gap: 5px;
-}
-.hidden {display: none;}
-
-}*/
