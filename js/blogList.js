@@ -1,6 +1,5 @@
 import { renderBlogPosts } from "./createHTML/renderBlogList.js";
-
-const url = "https://imdev.no/wp-json/wp/v2/posts?_embed&per_page=20";
+import { url } from "./utility/url.js";
 
 async function getBlogPosts() {
   try {
