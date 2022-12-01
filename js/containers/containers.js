@@ -1,3 +1,5 @@
+export const main = document.querySelector("main");
+
 // Index - Home
 export const indexMidSection = document.querySelector(".midSection");
 export const indexBottomSection = document.querySelector(".bottomSection");
