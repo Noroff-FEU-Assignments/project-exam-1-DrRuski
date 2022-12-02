@@ -9,7 +9,7 @@ async function getBlogPosts() {
 
     renderBlogPosts(blogPosts);
   } catch (error) {
-    errorWarningDisplay(error)
+    errorWarningDisplay(error);
   }
 }
 

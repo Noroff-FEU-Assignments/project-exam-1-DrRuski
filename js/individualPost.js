@@ -14,7 +14,7 @@ async function singlePost() {
 
     renderSinglePost(singlePost);
   } catch (error) {
-    errorWarningDisplay(error)
+    errorWarningDisplay(error);
   }
 }
 

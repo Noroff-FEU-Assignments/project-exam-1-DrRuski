@@ -14,7 +14,7 @@ async function getBlogPosts() {
     renderHomePage(blogPosts);
     carouselListener();
   } catch (error) {
-    errorWarningDisplay(error)
+    errorWarningDisplay(error);
   }
 }
 
