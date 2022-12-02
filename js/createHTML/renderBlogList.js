@@ -21,6 +21,7 @@ export function renderBlogPosts(blogPosts) {
     const author = `${post._embedded.author.map(
       (authorName) => authorName.name
     )}`;
+    const altText = `${post._embedded["wp:featuredmedia"][0].alt_text}`;
 
     if (
       !postTags.toLowerCase().startsWith("latest") &&
@@ -29,7 +30,7 @@ export function renderBlogPosts(blogPosts) {
       blogListContainer.innerHTML += `
                         <div class="blogPostWrapper flex-vert">
                           <a href="individualBlog.html?id=${postId}">
-                            <img class="postImage" src="${imgUrl}">
+                            <img class="postImage" src="${imgUrl}" alt="${altText}">
                             <p class="${postTags} blogPostTags">${postTags}</p>
                             <h4>${postTitle}</h4>
                           </a>
@@ -52,7 +53,7 @@ export function renderBlogPosts(blogPosts) {
         additionalPosts.innerHTML += `
                                   <div class="blogPostWrapper flex-vert">
                                     <a href="individualBlog.html?id=${postId}">
-                                      <img class="postImage" src="${imgUrl}">
+                                      <img class="postImage" src="${imgUrl}" alt="${altText}">
                                       <p class="${postTags} blogPostTags">${postTags}</p>
                                       <h4>${postTitle}</h4>
                                     </a>

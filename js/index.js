@@ -8,7 +8,7 @@ async function getBlogPosts() {
   try {
     const response = await fetch(url);
     const blogPosts = await response.json();
-
+console.log(blogPosts)
     carouselContainer.innerHTML = "";
 
     renderHomePage(blogPosts);

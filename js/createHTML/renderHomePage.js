@@ -19,12 +19,13 @@ export function renderHomePage(blogPosts) {
     const author = `${post._embedded.author.map(
       (authorName) => authorName.name
     )}`;
+    const altText = `${post._embedded["wp:featuredmedia"][0].alt_text}`;
 
     if (postTags.toLowerCase().startsWith("latest")) {
       carouselContainer.innerHTML += `
                                 <li class="latestPost">
                                   <a class="flex-vert" href="individualBlog.html?id=${postId}">
-                                      <img class="postImageSlider" src="${imgUrl}">
+                                      <img class="postImageSlider" src="${imgUrl}" alt="${altText}">
                                       <div class="flex-horiz mobilePadding"><span class="${postTags} blogPostTags">${postTags}</span></div>
                                       <h4 class="mobilePadding">${postTitle}</h4>
                                       <p>${excerpt}</p>
@@ -39,7 +40,7 @@ export function renderHomePage(blogPosts) {
       indexMidSection.innerHTML += `
                                 <div class="popularPost flex-vert">
                                   <a class="flex-vert" href="individualBlog.html?id=${postId}">
-                                      <img class="postImagePopular" src="${imgUrl}">
+                                      <img class="postImagePopular" src="${imgUrl}" alt="${altText}">
                                       <p class="${postTags} blogPostTags">${postTags}</p>
                                       <h4>${postTitle}</h4>
                                       <span class="paragraphLength">${excerpt}</span>
@@ -57,7 +58,7 @@ export function renderHomePage(blogPosts) {
       indexBottomSection.innerHTML += `
                                 <div class="bottomPosts flex-vert">
                                   <a class="flex-vert" href="individualBlog.html?id=${postId}">
-                                      <img class="bottomPostImage" src="${imgUrl}">
+                                      <img class="bottomPostImage" src="${imgUrl}" alt="${altText}">
                                       <p class="${postTags} blogPostTags">${postTags}</p>
                                       <h4>${postTitle}</h4>
                                   </a>
