@@ -20,7 +20,34 @@ img {
     color: #eee;
 }
 
+
 @media only screen and (min-width: 600px) {
+
+    .errorDisplayContainer{
+        gap: 2rem;
+        max-width: 500px;
+        padding: 2rem 4rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .warningIcon{
+        text-align: center;
+        font-size: 5rem;
+        color: var(--warning-color);
+    }
+    .errorDisplayRefreshBtn {
+        font-size: 16px;
+        border: none;
+        color: var(--main-text-color);
+        border-radius: 2rem;
+        background-color: var(--main-accent-color);
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .errorDisplayRefreshBtn:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
 
     .desktopHidden {
         display: none;
