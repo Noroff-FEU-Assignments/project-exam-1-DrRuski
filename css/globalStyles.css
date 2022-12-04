@@ -236,6 +236,9 @@ img {
         width: 80px;
         height: 80px;
     }
+    ::-webkit-scrollbar {
+        display: none;
+      }
 
     .loaderContainer div {
         box-sizing: border-box;
