@@ -11,6 +11,7 @@
 - Vanilla HTML
 - Vanilla CSS
 - Vanilla Javascript
+- WordPress
 
 ## Getting Started
 
