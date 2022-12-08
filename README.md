@@ -4,16 +4,13 @@
 
 ## Description
 
-This website is designed and constructed as a school project for the "Community Science Museum" which will provide valuable information to its current or future visitors. The website incorporates real world project development processes that are focused on research based, user-centric design and development.
-
-
 
 
 ## Built With
 
-- HTML
-- CSS
-- Javascript
+- Vanilla HTML
+- Vanilla CSS
+- Vanilla Javascript
 
 ## Getting Started
 
