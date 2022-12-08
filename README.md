@@ -11,7 +11,7 @@
 - Vanilla HTML
 - Vanilla CSS
 - Vanilla Javascript
-- WordPress
+- WordPress - Restful API
 
 ## Getting Started
 
